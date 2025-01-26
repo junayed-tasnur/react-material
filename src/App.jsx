@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Navbars from "./components/Navbars";
 import Presentation from "./components/presentation";
+import Slider from "./components/Slders";
 
 const App = () => {
   return (
@@ -8,7 +9,8 @@ const App = () => {
       <div>
         <Navbars />
         <Hero />
-        <Presentation/>
+        <Presentation />
+        <Slider />
       </div>
     </>
   );
