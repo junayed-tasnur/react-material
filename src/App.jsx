@@ -1,3 +1,4 @@
+import BomArea from "./components/BomArea";
 import Hero from "./components/Hero";
 import Navbars from "./components/Navbars";
 import Presentation from "./components/presentation";
@@ -12,7 +13,8 @@ const App = () => {
         <Hero />
         <Presentation />
         <Slider />
-        <Times/>
+        <Times />
+        <BomArea />
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import { ArrowForward } from "@mui/icons-material";
 const Times = () => {
   return (
     <>
-      <section className=" gap-24 py-16 px-6 lg:px-16 max-w-[1400px] mx-auto">
+      <section className=" gap-24 md:py-16 px-6 lg:px-16 max-w-[1400px] mx-auto">
         {/* section one */}
         <div className="flex flex-col lg:flex-row    items-center justify-between  ">
           {/* left side */}

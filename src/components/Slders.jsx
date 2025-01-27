@@ -7,19 +7,19 @@ function Slider() {
       id: 1,
       heading: `"Make more time for the work that matters most"`,
       description: "Best software platform for running an internet business.",
-      image: "/public/acrobatic.png",
+      image: "/acrobatic.png",
     },
     {
       id: 2,
       heading: `"Build more time for the work that matters most"`,
       description: "Best software platform for running an internet business.",
-      image: "/public/rocket2.png",
+      image: "/rocket2.png",
     },
     {
       id: 3,
       heading: `"Take more time for the work that matters most"`,
       description: "Best software platform for running an internet business.",
-      image: "images.png",
+      image: "/images.png",
     },
   ];
 
@@ -59,7 +59,7 @@ function Slider() {
           <div className="flex flex-col justify-between w-full md:w-1/2 space-y-6">
             <img
               className="w-6 md:w-8 mx-auto md:mx-0"
-              src="/public/Shape.png"
+              src="/Shape.png"
               alt=""
             />
             <h1 className="text-xl md:text-5xl font-bold text-black text-center md:text-left max-w-md">
