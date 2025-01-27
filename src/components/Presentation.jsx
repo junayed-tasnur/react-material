@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ArrowForward } from "@mui/icons-material";
 
 function Presentation() {

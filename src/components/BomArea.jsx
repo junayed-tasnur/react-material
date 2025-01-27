@@ -1,5 +1,3 @@
-import React from 'react';
-
 function BombArea() {
   return (
     <section className="bg-indigo-500 w-full h-auto mb-5">
