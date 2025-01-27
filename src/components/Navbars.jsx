@@ -25,67 +25,67 @@ const Navbars = () => {
   return (
     <>
       <div className="">
-      <AppBar
-        elevation={0}
-        className="Navbar  "
-        position="static"
-        sx={{
-          backgroundColor: "white",
-          color: "black",
-          border: "1px solid #fafafa",
-        }}
-      >
-        <Toolbar >
-          {ismobile ? (
-            <div>
-              <IconButton color="inherit" onClick={() => setopen(true)}>
-                <MenuIcon />
-              </IconButton>
-            </div>
-          ) : (
-            <>
-              <Typography sx={{ flexGrow: 1 }}>
-                <img src="/degic 1.png" alt="" />
-              </Typography>
-              {menuItems.map((item) => (
-                <Button color="inherit" key={item}>
-                  {item}
+        <AppBar
+          elevation={0}
+          className="Navbar  "
+          position="static"
+          sx={{
+            backgroundColor: "white",
+            color: "black",
+            border: "1px solid #fafafa",
+          }}
+        >
+          <Toolbar>
+            {ismobile ? (
+              <div>
+                <IconButton color="inherit" onClick={() => setopen(true)}>
+                  <MenuIcon />
+                </IconButton>
+              </div>
+            ) : (
+              <>
+                <Typography sx={{ flexGrow: 1 }}>
+                  <img className="cursor-pointer" src="/degic 1.png" alt="" />
+                </Typography>
+                {menuItems.map((item) => (
+                  <Button color="inherit" key={item}>
+                    {item}
+                  </Button>
+                ))}
+
+                <Button
+                  variant="outlined"
+                  sx={{
+                    color: "#2ab691",
+                    backgroundColor: "white",
+                    borderRadius: "10px",
+                    "&:hover": {
+                      backgroundColor: "#21b666",
+                      color: "white",
+                      fontWeight: "bold",
+                    },
+                  }}
+                >
+                  Sign Up
                 </Button>
-              ))}
+              </>
+            )}
+          </Toolbar>
+        </AppBar>
 
-              <Button
-                variant="outlined"
-                sx={{
-                  color: "#2ab691",
-                  backgroundColor: "white",
-                  borderRadius: "10px",
-                  "&:hover": {
-                    backgroundColor: "#21b666",
-                    color: "white",
-                    fontWeight: "bold",
-                  },
-                }}
-              >
-                Sign Up
-              </Button>
-            </>
-          )}
-        </Toolbar>
-      </AppBar>
-
-      <Drawer anchor="left" open={open} onClose={() => setopen(false)}>
-        <List>
-          {menuItems.map((item) => (
-            <ListItem button key={item} onClick={() => setopen(false)}>
-              <ListItemText>{item}</ListItemText>
+        <Drawer anchor="left" open={open} onClose={() => setopen(false)}>
+          <List>
+            {menuItems.map((item) => (
+              <ListItem button key={item} onClick={() => setopen(false)}>
+                <ListItemText>{item}</ListItemText>
+              </ListItem>
+            ))}
+            <ListItem Button>
+              {" "}
+              <ListItemText primary="Sign Up" />{" "}
             </ListItem>
-          ))}
-          <ListItem Button>
-            {" "}
-            <ListItemText primary="Sign Up" />{" "}
-          </ListItem>
-        </List>
-      </Drawer>
+          </List>
+        </Drawer>
       </div>
     </>
   );

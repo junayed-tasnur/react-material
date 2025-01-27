@@ -1,4 +1,6 @@
+import Blog from "./components/Blog";
 import BomArea from "./components/BomArea";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbars from "./components/Navbars";
 import Presentation from "./components/presentation";
@@ -15,6 +17,8 @@ const App = () => {
         <Slider />
         <Times />
         <BomArea />
+        <Blog />
+        <Footer/>
       </div>
     </>
   );
