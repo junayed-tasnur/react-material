@@ -24,9 +24,10 @@ const Navbars = () => {
 
   return (
     <>
+      <div className="">
       <AppBar
         elevation={0}
-        className="Navbar container "
+        className="Navbar  "
         position="static"
         sx={{
           backgroundColor: "white",
@@ -34,7 +35,7 @@ const Navbars = () => {
           border: "1px solid #fafafa",
         }}
       >
-        <Toolbar>
+        <Toolbar >
           {ismobile ? (
             <div>
               <IconButton color="inherit" onClick={() => setopen(true)}>
@@ -85,6 +86,7 @@ const Navbars = () => {
           </ListItem>
         </List>
       </Drawer>
+      </div>
     </>
   );
 };

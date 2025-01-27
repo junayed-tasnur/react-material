@@ -2,15 +2,17 @@ import Hero from "./components/Hero";
 import Navbars from "./components/Navbars";
 import Presentation from "./components/presentation";
 import Slider from "./components/Slders";
+import Times from "./components/Times";
 
 const App = () => {
   return (
     <>
-      <div>
+      <div className="">
         <Navbars />
         <Hero />
         <Presentation />
         <Slider />
+        <Times/>
       </div>
     </>
   );
